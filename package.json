@@ -1,6 +1,6 @@
 {
   "name": "vue-json-form",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Vue.js component generating form from JSON.",
   "main": "index.js",
   "scripts": {
