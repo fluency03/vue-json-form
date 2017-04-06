@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserify": {
+    "transform": [
+      [
+        "vueify"
+      ]
+    ]
+  },
   "keywords": [
     "Vue.js",
     "JSON",
