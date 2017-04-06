@@ -1,1 +1,3 @@
-module.exports = require('./src/JsonForm')
+import JsonForm from './src/JsonForm.vue'
+
+module.exports = JsonForm
