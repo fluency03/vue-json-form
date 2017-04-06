@@ -22,9 +22,7 @@
         type: String,
         default: ''
       },
-      value: {
-        type: Object
-      }
+      value: {}
     }
   }
 </script>
