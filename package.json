@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/fluency03/vue-json-form/issues"
   },
-  "homepage": "https://github.com/fluency03/vue-json-form#readme"
+  "homepage": "https://github.com/fluency03/vue-json-form#readme",
+  "dependencies": {
+    "iview": "^2.0.0-rc.9",
+    "vue": "^2.2.6"
+  }
 }
