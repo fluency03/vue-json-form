@@ -37,7 +37,6 @@
     },
     methods: {
       openInputName (type) {
-        console.log(type)
         this.type = type
         this.nameInput = !this.isArray
         if (this.isArray) {
@@ -49,7 +48,7 @@
           type: this.type,
           name: this.name
         }
-        this.$emit('on-add-new', params)
+        this.$emit('add-new-node', params)
       }
     }
   }

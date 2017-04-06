@@ -8,7 +8,7 @@
             <template v-for="(item, index) in value">
               <json-node :prop="index.toString()" :value="item"></json-node>
             </template>
-            <add-new :is-array="true" @on-add-new="add"></add-new>
+            <add-new-node :is-array="true" @add-new-node="add"></add-new-node>
           </p>
         </Panel>
       </Collapse>
@@ -39,7 +39,7 @@
             <template v-for="(subvalue, subprop) in value">
               <json-node :prop="subprop" :value="subvalue"></json-node>
             </template>
-            <add-new @on-add-new="add"></add-new>
+            <add-new-node @add-new-node="add"></add-new-node>
           </p>
         </Panel>
       </Collapse>
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-  import AddNew from './AddNew'
+  import AddNewNode from './AddNewNode'
   import Vue from 'vue'
 
   export default {
@@ -56,13 +56,12 @@
     props: ['prop', 'value'],
     components: {
       'json-node': this,
-      'add-new': AddNew
+      'add-new-node': AddNewNode
     },
     methods: {
       add (params) {
         var name = params.name
         var type = params.type
-        console.log(params)
         const nameToNew = {
           Object: {},
           Array: [],
@@ -71,7 +70,6 @@
           Boolean: false
         }
         var newItem = nameToNew[type]
-        console.log(newItem)
         if (this.isArray(this.value)) {
           this.value.push(newItem)
         } else if (this.isObject(this.value)) {
