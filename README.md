@@ -59,3 +59,5 @@ In Vue.js:
 
 </style>
 ```
+
+![](./demo.png)
