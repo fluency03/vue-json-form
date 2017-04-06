@@ -1,0 +1,24 @@
+{
+  "name": "vue-json-form",
+  "version": "0.0.0",
+  "description": "A Vue.js component generating form from JSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Vue.js",
+    "JSON",
+    "form"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluency03/vue-json-form.git"
+  },
+  "author": "Chang Liu <fluency.03@gmail.com> (http://fluency03.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fluency03/vue-json-form/issues"
+  },
+  "homepage": "https://github.com/fluency03/vue-json-form#readme"
+}
