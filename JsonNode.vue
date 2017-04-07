@@ -6,7 +6,7 @@
           {{prop}}
           <p slot="content">
             <template v-for="(item, index) in value">
-              <json-node :prop="index.toString()" :value="item"></json-node>
+              <json-node :prop="index.toString()" v-model="value[index]"></json-node>
             </template>
             <add-new-node :is-array="true" @add-new-node="add"></add-new-node>
           </p>
@@ -37,7 +37,7 @@
           {{prop}}
           <p slot="content">
             <template v-for="(subvalue, subprop) in value">
-              <json-node :prop="subprop" :value="subvalue"></json-node>
+              <json-node :prop="subprop" v-model="value[subprop]"></json-node>
             </template>
             <add-new-node @add-new-node="add"></add-new-node>
           </p>
@@ -49,7 +49,6 @@
 
 <script>
   import AddNewNode from './AddNewNode'
-  import { FormItem, Collapse, Panel } from 'iview'
   import Vue from 'vue'
 
   export default {
@@ -57,10 +56,7 @@
     props: ['prop', 'value'],
     components: {
       'json-node': this,
-      'add-new-node': AddNewNode,
-      'Form-item': FormItem,
-      'Collapse': Collapse,
-      'Panel': Panel
+      'add-new-node': AddNewNode
     },
     methods: {
       add (params) {
