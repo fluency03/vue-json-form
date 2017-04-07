@@ -49,6 +49,7 @@
 
 <script>
   import AddNewNode from './AddNewNode'
+  import { FormItem, Collapse, Panel } from 'iview'
   import Vue from 'vue'
 
   export default {
@@ -56,7 +57,10 @@
     props: ['prop', 'value'],
     components: {
       'json-node': this,
-      'add-new-node': AddNewNode
+      'add-new-node': AddNewNode,
+      'Form-item': FormItem,
+      'Collapse': Collapse,
+      'Panel': Panel
     },
     methods: {
       add (params) {

@@ -2,14 +2,19 @@
   "name": "vue-json-form",
   "version": "0.0.5",
   "description": "A Vue.js component generating form from JSON.",
-  "main": "src/JsonForm.vue",
+  "main": "JsonForm.vue",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": [
+      "vueify"
+    ]
   },
   "keywords": [
     "Vue.js",
     "JSON",
-    "form"
+    "Form"
   ],
   "repository": {
     "type": "git",

@@ -8,10 +8,12 @@
 
 <script>
   import JsonNode from './JsonNode'
+  import { Form } from 'iview'
 
   export default {
     components: {
-      JsonNode
+      'json-node': JsonNode,
+      'Form': Form
     },
     props: {
       labelWidth: {

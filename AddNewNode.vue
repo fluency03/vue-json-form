@@ -21,6 +21,8 @@
 </template>
 
 <script>
+  import { Dropdown, DropdownItem } from 'iview'
+
   export default {
     props: {
       isArray: {
