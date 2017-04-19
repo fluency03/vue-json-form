@@ -1,6 +1,6 @@
 {
   "name": "vue-json-form",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Vue.js component generating form from JSON.",
   "author": "Chang Liu <fluency.03@gmail.com> (http://fluency03.com)",
   "license": "MIT",
