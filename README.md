@@ -8,6 +8,8 @@
 
 A Vue.js component generating form from JSON.
 
+[**Live Demo**](http://fluency03.com/demo/vue-json-form/)
+
 ## Usage
 
 ```javascript
