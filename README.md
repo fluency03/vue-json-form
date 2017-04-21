@@ -10,6 +10,12 @@ A Vue.js component generating form from JSON.
 
 [**Live Demo**](http://fluency03.com/demo/vue-json-form/)
 
+TODOs:
+- implement delete feature
+- import JSON as default settings
+- submit, reset, clear
+- 
+
 ## Usage
 
 ```javascript
