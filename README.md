@@ -12,9 +12,8 @@ A Vue.js component generating form from JSON.
 
 TODOs:
 - implement delete feature
-- import JSON as default settings
 - submit, reset, clear
-- 
+-
 
 ## Usage
 
