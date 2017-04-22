@@ -8,8 +8,9 @@
       <Button type="primary" @click="jsonToForm">Convert JSON to Form</Button>
       <br><br><br>
       <Button type="primary" @click="formToJSON">Convert Form to JSON</Button>
+      <Button type="primary" @click="clear">Clear</Button>
       <br><br>
-      <json-form :label-width="80" v-model="myData"></json-form>
+      <json-form ref="form" :label-width="80" v-model="myData"></json-form>
     </div>
     <Modal
         v-model="errorModal"
@@ -67,6 +68,12 @@
           this.error = 'Connot convert to JSON!'
           this.errorModal = true
         }
+      },
+      reset () {
+        this.$refs['form'].reset()
+      },
+      clear () {
+        this.$refs['form'].clear()
       }
     }
   }
