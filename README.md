@@ -5,16 +5,18 @@
 [![MIT license](https://img.shields.io/npm/l/vue-json-form.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/fluency03/vue-json-form.svg?style=social&label=Star)](https://github.com/fluency03/vue-json-form)
 
-*In development process.*
+[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 
 A Vue.js component generating form from JSON.
+
+This project is mainly for demonstrating how a JSON can be converted to a form view. No `submit`, `reset` or relevant form functionalities are implemented. All of this is due to one of [my another project](https://github.com/dockeron/dockeron), where I would like to do some configurations or settings via form but more suitable form API request parameter/body format.
 
 [**Live Demo**](http://fluency03.com/demo/vue-json-form/)
 
 TODOs:
 - implement delete feature
-- submit, reset, clear
--
+
 
 ## Usage
 
